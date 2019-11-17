@@ -23,11 +23,13 @@ function hello(callback){
 }
 
 hello(show);
+console.log('end of statement');
 
 OUTPUT:
 --------
 end of programme
 show is a callback function
+end of statement
 hi this is raj
 
 
