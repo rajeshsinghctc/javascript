@@ -1,6 +1,9 @@
 /*const has block scope and calling outside of block throw (ReferenceError: baz is not defined) and cannot be declared 
 throws(SyntaxError: Missing initializer in const declaration)but always be initialized
-cannot be initialized twice in the same block thows(SyntaxError: Identifier 'baz' has already been declared))*/
+cannot be initialized twice in the same block thows(SyntaxError: Identifier 'baz' has already been declared))
+if you reassign const variable will throw TypeError: Assignment to constant variable. so reassign is not possible inside 
+same block.
+*/
 /*
 function run() {
   {
@@ -128,3 +131,14 @@ function run() {
 }
 run();
 */
+
+function run() {
+  {
+  const baz = 20;
+  
+  }
+  baz= 30; 
+  console.log(baz); // 30
+  
+}
+run();

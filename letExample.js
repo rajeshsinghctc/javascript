@@ -64,8 +64,8 @@ run();
 function run() {
   {
   let baz= 30;
-  let baz = 20;
-  console.log(baz); // OP: SyntaxError: Identifier 'baz' has already been declared
+  let baz = 20;// OP: SyntaxError: Identifier 'baz' has already been declared 
+  console.log(baz); 
   }
 }
 run();
