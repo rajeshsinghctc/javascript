@@ -70,3 +70,15 @@ var jSonData = require('./output.json');
 console.log('Json data======', jSonData.name);
 console.log('Json data======', jSonData.version);
 console.log('Json data======', jSonData.testName.description);
+
+//Case 9: Reading multiple files together ###############################################################
+
+var f2 =  require('./file2');
+var f4 =  require('./file4').func1;
+var f6 =  require('./output.json');
+f2Obj = new f2();
+console.log(f2Obj.a);
+
+f4Obj = new f4();
+console.log(f4Obj.a);
+console.log('Json data======', f6.name);
