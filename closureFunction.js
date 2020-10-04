@@ -21,7 +21,7 @@ add(); //3
  */
 /*
  function page(){
-     counter = 0;
+     var counter = 0;
      function click(){
         counter = counter+1;
         console.log('click on page ', counter + ' times');
