@@ -1,7 +1,7 @@
 /*
 Json file can be read multiple ways: direct require the json file and get the json object, using fs module.
 direct require the json file and get the json object : this will store the object in cache memeory and any upate to the Json file
-during the execution will not be reflected till the object is released.
+during the execution will not be reflected till the object is released. When calling object property it will get it from cached object from cache.
 
 using fs module: sort the previous problem using require option, it can dinamically get the updated json object eachtime the updJSON file modified during execution.
 
